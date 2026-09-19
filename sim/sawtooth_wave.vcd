@@ -1,0 +1,58 @@
+$date
+	Mon Sep 07 22:51:01 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module sawtooth_wave_tb $end
+$var wire 16 ! amplitude_tb [15:0] $end
+$var reg 32 " phase_in_tb [31:0] $end
+$scope module DUT $end
+$var wire 32 # phase_in [31:0] $end
+$var parameter 32 $ AMP_WIDTH $end
+$var parameter 32 % PHASE_WIDTH $end
+$var reg 16 & amplitude [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000 %
+b10000 $
+$end
+#0
+$dumpvars
+b1000000000000000 &
+b0 #
+b0 "
+b1000000000000000 !
+$end
+#10000
+b1100000000000000 !
+b1100000000000000 &
+b1000000000000000000000000000000 "
+b1000000000000000000000000000000 #
+#20000
+b0 !
+b0 &
+b10000000000000000000000000000000 "
+b10000000000000000000000000000000 #
+#30000
+b100000000000000 !
+b100000000000000 &
+b11000000000000000000000000000000 "
+b11000000000000000000000000000000 #
+#40000
+b111111111111111 !
+b111111111111111 &
+b11111111111111111111111111111111 "
+b11111111111111111111111111111111 #
+#50000
+b1000000000000000 !
+b1000000000000000 &
+b0 "
+b0 #
+#60000

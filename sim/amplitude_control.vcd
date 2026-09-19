@@ -1,0 +1,69 @@
+$date
+	Sun Sep 13 09:31:44 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module amplitude_control_tb $end
+$var wire 16 ! amp_out_tb [15:0] $end
+$var reg 16 " amp_in_tb [15:0] $end
+$var reg 4 # gain_tb [3:0] $end
+$scope module DUT $end
+$var wire 16 $ amp_in [15:0] $end
+$var wire 4 % gain [3:0] $end
+$var parameter 32 & AMP_WIDTH $end
+$var reg 16 ' amp_out [15:0] $end
+$var reg 5 ( gain_signed [4:0] $end
+$var reg 20 ) product [19:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 &
+$end
+#0
+$dumpvars
+b0 )
+b0 (
+b0 '
+b0 %
+b10011100010000 $
+b0 #
+b10011100010000 "
+b0 !
+$end
+#10000
+b1010011010101 !
+b1010011010101 '
+b10011100010000000 )
+b1000 (
+b1000 #
+b1000 %
+#20000
+b10011100010000 !
+b10011100010000 '
+b100100100111110000 )
+b1111 (
+b1111 #
+b1111 %
+#30000
+b1110101100101011 !
+b1110101100101011 '
+b11101100011110000000 )
+b1000 (
+b1000 #
+b1000 %
+b1101100011110000 "
+b1101100011110000 $
+#40000
+b1101100011110000 !
+b1101100011110000 '
+b11011011011000010000 )
+b1111 (
+b1111 #
+b1111 %
+#50000

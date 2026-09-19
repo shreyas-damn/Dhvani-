@@ -1,0 +1,227 @@
+$date
+	Fri Sep 18 22:04:48 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module synthesizer_top_tb $end
+$var wire 16 ! pcm_sample_tb [15:0] $end
+$var reg 1 " clk_tb $end
+$var reg 4 # gain_tb [3:0] $end
+$var reg 32 $ phase_increment_tb [31:0] $end
+$var reg 1 % rst_tb $end
+$var reg 2 & waveform_select_tb [1:0] $end
+$scope module DUT $end
+$var wire 1 " clk $end
+$var wire 4 ' gain [3:0] $end
+$var wire 32 ( phase_increment [31:0] $end
+$var wire 1 % rst $end
+$var wire 2 ) waveform_select [1:0] $end
+$var wire 16 * tri_amplitude [15:0] $end
+$var wire 16 + square_amplitude [15:0] $end
+$var wire 16 , sin_amplitude [15:0] $end
+$var wire 16 - selected_amplitude [15:0] $end
+$var wire 16 . saw_amplitude [15:0] $end
+$var wire 32 / phase [31:0] $end
+$var wire 16 0 pcm_sample [15:0] $end
+$var parameter 32 1 AMP_WIDTH $end
+$var parameter 32 2 PHASE_WIDTH $end
+$scope module U_amp $end
+$var wire 4 3 gain [3:0] $end
+$var wire 16 4 amp_in [15:0] $end
+$var parameter 32 5 AMP_WIDTH $end
+$var reg 16 6 amp_out [15:0] $end
+$var reg 5 7 gain_signed [4:0] $end
+$var reg 20 8 product [19:0] $end
+$upscope $end
+$scope module U_phase $end
+$var wire 1 " clk $end
+$var wire 32 9 phase_inc [31:0] $end
+$var wire 1 % rst $end
+$var parameter 32 : PHASE_WIDTH $end
+$var reg 32 ; phase_out [31:0] $end
+$upscope $end
+$scope module U_saw $end
+$var wire 32 < phase_in [31:0] $end
+$var parameter 32 = AMP_WIDTH $end
+$var parameter 32 > PHASE_WIDTH $end
+$var reg 16 ? amplitude [15:0] $end
+$upscope $end
+$scope module U_sel $end
+$var wire 16 @ saw_amplitude [15:0] $end
+$var wire 2 A sel [1:0] $end
+$var wire 16 B tri_amplitude [15:0] $end
+$var wire 16 C square_amplitude [15:0] $end
+$var wire 16 D sin_amplitude [15:0] $end
+$var parameter 32 E AMP_WIDTH $end
+$var reg 16 F amp [15:0] $end
+$upscope $end
+$scope module U_sine $end
+$var wire 32 G phase_in [31:0] $end
+$var parameter 32 H AMP_WIDTH $end
+$var parameter 32 I PHASE_WIDTH $end
+$var reg 16 J amplitude [15:0] $end
+$upscope $end
+$scope module U_square $end
+$var wire 32 K phase_in [31:0] $end
+$var parameter 32 L AMP_WIDTH $end
+$var parameter 32 M PHASE_WIDTH $end
+$var reg 16 N amplitude [15:0] $end
+$upscope $end
+$scope module U_tri $end
+$var wire 32 O phase_in [31:0] $end
+$var parameter 32 P AMP_WIDTH $end
+$var parameter 32 Q PHASE_WIDTH $end
+$var reg 16 R amplitude [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000 Q
+b10000 P
+b100000 M
+b10000 L
+b100000 I
+b10000 H
+b10000 E
+b100000 >
+b10000 =
+b100000 :
+b10000 5
+b100000 2
+b10000 1
+$end
+#0
+$dumpvars
+bx R
+bx O
+bx N
+bx K
+bx J
+bx G
+bx F
+bx D
+bx C
+bx B
+b11 A
+bx @
+bx ?
+bx <
+bx ;
+b1000000000000000000000000000000 9
+bx 8
+b101 7
+bx 6
+bx 4
+b101 3
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+bx *
+b11 )
+b1000000000000000000000000000000 (
+b101 '
+b11 &
+1%
+b1000000000000000000000000000000 $
+b101 #
+0"
+bx !
+$end
+#5000
+b1101010101010110 !
+b1101010101010110 0
+b1101010101010110 6
+b11011000000000000000 8
+b1000000000000000 -
+b1000000000000000 4
+b1000000000000000 F
+b1000000000000000 .
+b1000000000000000 ?
+b1000000000000000 @
+b0 *
+b0 B
+b0 R
+b111111111111111 +
+b111111111111111 C
+b111111111111111 N
+b0 ,
+b0 D
+b0 J
+b0 /
+b0 ;
+b0 <
+b0 G
+b0 K
+b0 O
+1"
+#10000
+0"
+#15000
+1"
+#20000
+0"
+0%
+#25000
+b1110101010101011 !
+b1110101010101011 0
+b1110101010101011 6
+b11101100000000000000 8
+b1100000000000000 -
+b1100000000000000 4
+b1100000000000000 F
+b111111111111111 *
+b111111111111111 B
+b111111111111111 R
+b1100000000000000 .
+b1100000000000000 ?
+b1100000000000000 @
+b111111111111111 ,
+b111111111111111 D
+b111111111111111 J
+b1000000000000000000000000000000 /
+b1000000000000000000000000000000 ;
+b1000000000000000000000000000000 <
+b1000000000000000000000000000000 G
+b1000000000000000000000000000000 K
+b1000000000000000000000000000000 O
+1"
+#30000
+0"
+#35000
+b0 !
+b0 0
+b0 6
+b0 8
+b0 -
+b0 4
+b0 F
+b0 .
+b0 ?
+b0 @
+b0 *
+b0 B
+b0 R
+b1000000000000001 +
+b1000000000000001 C
+b1000000000000001 N
+b0 ,
+b0 D
+b0 J
+b10000000000000000000000000000000 /
+b10000000000000000000000000000000 ;
+b10000000000000000000000000000000 <
+b10000000000000000000000000000000 G
+b10000000000000000000000000000000 K
+b10000000000000000000000000000000 O
+1"
+#40000
+0"

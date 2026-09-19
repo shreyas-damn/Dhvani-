@@ -1,0 +1,62 @@
+$date
+	Fri Sep 11 09:14:06 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module waveform_selector_tb $end
+$var wire 16 ! amp_tb [15:0] $end
+$var reg 16 " saw_amplitude_tb [15:0] $end
+$var reg 2 # sel_tb [1:0] $end
+$var reg 16 $ sin_amplitude_tb [15:0] $end
+$var reg 16 % square_amplitude_tb [15:0] $end
+$var reg 16 & tri_amplitude_tb [15:0] $end
+$scope module DUT $end
+$var wire 16 ' saw_amplitude [15:0] $end
+$var wire 2 ( sel [1:0] $end
+$var wire 16 ) sin_amplitude [15:0] $end
+$var wire 16 * square_amplitude [15:0] $end
+$var wire 16 + tri_amplitude [15:0] $end
+$var parameter 32 , AMP_WIDTH $end
+$var reg 16 - amp [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10000 ,
+$end
+#0
+$dumpvars
+b1111101000 -
+b101110111000 +
+b11111010000 *
+b1111101000 )
+b0 (
+b111110100000 '
+b101110111000 &
+b11111010000 %
+b1111101000 $
+b0 #
+b111110100000 "
+b1111101000 !
+$end
+#10000
+b11111010000 !
+b11111010000 -
+b1 #
+b1 (
+#20000
+b101110111000 !
+b101110111000 -
+b10 #
+b10 (
+#30000
+b111110100000 !
+b111110100000 -
+b11 #
+b11 (
+#40000
